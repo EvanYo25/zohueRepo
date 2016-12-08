@@ -331,6 +331,21 @@ function checkPwd(){
   }
 }
 
+function check_allnotblank() 
+{
+  if($("#UserAlias").val()!="" && $("#UserAccount").val()!="" && $("#UserPwd").val()!="" && $("#UserPwdConfirm").val()!="" && 
+    $("#UserType").val()!="")
+  {
+    $("#submit").prop("disabled", false);
+    $("#submit").css("background-color","#FFCE54");
+  }
+  else
+  {
+    $("#submit").prop("disabled", true);
+    $("#submit").css("background-color", "gray");
+  }
+}
+
 function Submit(){
   console.log("sumbmit");
   var alias = $("#UserAlias").val();
@@ -350,7 +365,7 @@ function Submit(){
         label: "不同意",
         className: "btn-default",
         callback: function() {
-          window.location.assign("/home");
+//          window.location.assign("/home");
         }
       },
       main: {

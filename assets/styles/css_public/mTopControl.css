@@ -375,7 +375,7 @@ select, input[type="text"], input[type="password"]{
 	height: 550px;*/
 	float:right;
 	/*color:#668D3C;*/
-	color:#D26900;
+	/*color:#D26900;*/
 	font-family: "微軟正黑體";
 	font-size:30px;
 }
@@ -487,6 +487,7 @@ select, input[type="text"], input[type="password"]{
 	margin-top:25px;
 	/*color:#816C5B;*/
 	/*background-color: rgba(232, 81, 0, 0.7);*/
+	background-color:gray;
 	/*color:#533828;*/
 }
 
